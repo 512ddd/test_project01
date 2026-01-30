@@ -54,6 +54,7 @@ class Product(models.Model):
     description = models.TextField()
     availability = models.BooleanField(default=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
+    image = models.ImageField(upload_to='product_images/', null=True, blank=True)
     createdDate = models.DateTimeField(auto_now_add=True)
     updatedDate = models.DateTimeField(auto_now=True)
     isDeleted = models.BooleanField(default=False)

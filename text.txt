@@ -1,3 +1,14 @@
 git add .
 git commit -m "Initial commit"
 git push -u origin main
+
+
+如果您想重置数据或再次生成新数据，只需在 backend 目录下运行：
+
+```
+python manage.py populate_db
+```
+(注意：运行此命令会先清空现有数据，然后再重新生成)
+
+前端网站：http://localhost:5173/
+后端网站：http://127.0.0.1:8000/
